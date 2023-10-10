@@ -41,7 +41,7 @@ app.post('/github', async (req, res) => {
     res.status(200).json({ message: 'GitHub data saved successfully' });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Error in code Save GitHub Data ' });
   }
 });
 
@@ -66,11 +66,11 @@ app.get('/github/:id', async (req, res) => {
     client.close();
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'github id not found' });
   }
 });
 
 // Start the Express server
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Port number  ${port}`);
 });
