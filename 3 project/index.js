@@ -82,7 +82,7 @@ app.get('/car/:carNumber', (req, res) => {
   return res.status(200).json(slot);
 });
 
-
+// slot
 
 app.get('/slot/:slotNumber', (req, res) => {
   const { slotNumber } = req.params;
