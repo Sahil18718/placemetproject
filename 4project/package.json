@@ -1,0 +1,20 @@
+{
+  "name": "4project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.0",
+    "bcrypt": "^5.0.1",
+    "nodemailer": "^6.10.1"
+  }
+}
