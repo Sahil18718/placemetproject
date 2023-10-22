@@ -14,7 +14,7 @@ router.post('/signup', async (req, res) => {
     }
 
     
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 7);
 
     
     const newUser = new User({
@@ -22,6 +22,7 @@ router.post('/signup', async (req, res) => {
       password: hashedPassword
     });
     
+
     await newUser.save();
 
     // Send a welcome email (you need to implement this)
