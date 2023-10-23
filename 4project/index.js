@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://sahil:sahilmalviya@cluster0.hhowf26.mongodb.net/
 });
 
 
-const authRoutes = require('./routes/auth');
+const authRoutes = require('./routes/auh');
 app.use('/api', authRoutes);
 
 app.listen(3000, () => {
