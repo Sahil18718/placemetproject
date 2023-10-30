@@ -44,7 +44,7 @@ app.post('/schedule-email', async (req, res) => {
     await transporter.sendMail(mailOptions);
     res.status(200).json({ message: 'Email scheduled and sent successfully' });
 
-    // Record the success in MongoDB
+   
     const emailSchedule = new EmailSchedule({ email, time, subject, body, status: 'Success' });
     emailSchedule.save();
   } catch (error) {
@@ -67,6 +67,7 @@ app.get('/scheduled-emails', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch scheduled emails' });
   }
 });
+
 
 
 app.listen(port, () => {
