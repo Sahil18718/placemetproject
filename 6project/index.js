@@ -57,7 +57,7 @@ app.post('/schedule-email', async (req, res) => {
   }
 });
 
-// List Scheduled Emails
+
 app.get('/scheduled-emails', async (req, res) => {
   try {
     const scheduledEmails = await EmailSchedule.find();
