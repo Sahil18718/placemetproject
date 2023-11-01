@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Connect to MongoDB
+
 mongoose.connect('mongodb://localhost/email-scheduling-app', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
