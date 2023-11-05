@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/user-management', {
   
 });
 
-// Define the User schema
+
 const User = mongoose.model('User', {
   first_name: String,
   last_name: String,
