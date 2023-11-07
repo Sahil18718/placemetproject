@@ -22,7 +22,7 @@ const User = mongoose.model('User', {
   status: String,
 });
 
-// JWT Secret (replace with your secret key)
+
 const jwtSecret = 'your-secret-key';
 
 // Middleware for token validation
