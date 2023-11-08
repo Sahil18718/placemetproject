@@ -88,7 +88,7 @@ app.post('/api/users/login', async (req, res) => {
   }
 });
 
-// Fetch User Details API
+
 app.get('/api/users/details', validateToken, async (req, res) => {
   const user = await User.findById(req.user.id);
   if (!user) return res.status(404).json({ status: 404, message: 'User not found' });
