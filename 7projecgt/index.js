@@ -25,7 +25,7 @@ const User = mongoose.model('User', {
 
 const jwtSecret = 'your-secret-key';
 
-// Middleware for token validation
+
 function validateToken(req, res, next) {
   const token = req.header('Authorization');
   if (!token) return res.status(401).json({ status: 401, message: 'Invalid/Expired Token' });
