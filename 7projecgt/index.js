@@ -38,7 +38,6 @@ function validateToken(req, res, next) {
   });
 }
 
-// User Registration API
 app.post('/api/users/register', async (req, res) => {
   try {
     const user = new User(req.body);
